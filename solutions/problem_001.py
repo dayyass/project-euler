@@ -1,18 +1,21 @@
 # https://projecteuler.net/problem=1
 
 
-# O(n) solution
 def problem_01(upper_bound: int = 1000):
     """
     Straightforward solution suitable in time.
+    - O(n) time-complexity
+    - O(1) space-complexity
     """
     return sum(i for i in range(upper_bound) if (i % 3 == 0) or (i % 5 == 0))
 
 
-# O(1) solution
 def problem_01_faster(upper_bound: int = 1000):
     """
     Constant time solution using arithmetic series.
+    - O(1) time-complexity
+    - O(1) space-complexity
+
     1) add sum of natural numbers up to 1000 multiples of 3;
     2) add sum of natural numbers up to 1000 multiples of 5;
     3) subtract sum of natural numbers up to 1000 multiples of 15, since for these numbers 1) and 2) occur twice.
@@ -33,4 +36,4 @@ def arithmetic_series_multiple_of_d(d: int, upper_bound: int = 1000):
 
 
 if __name__ == '__main__':
-    print(f'problem 1 solution: {problem_01_faster()}')
+    print(f'Problem 1 solution: {problem_01_faster()}')
