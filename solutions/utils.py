@@ -22,3 +22,15 @@ def is_prime(n: int) -> bool:
         if n % i == 0:
             return False
     return True
+
+
+def is_palindromic(n: int) -> bool:
+    """
+    Check if the number is palindromic.
+    - O(1) time-complexity
+    - O(1) space-complexity
+    """
+    str_n = str(n)
+    if str_n == str_n[::-1]:
+        return True
+    return False
