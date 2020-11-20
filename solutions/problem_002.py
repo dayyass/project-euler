@@ -1,7 +1,4 @@
-# https://projecteuler.net/problem=2
-
-
-def problem_02(upper_bound: int = 4_000_000):
+def problem_002(upper_bound: int = 4_000_000) -> int:
     """
     - O(n) time-complexity
     - O(1) space-complexity
@@ -19,4 +16,4 @@ def problem_02(upper_bound: int = 4_000_000):
 
 
 if __name__ == '__main__':
-    print(f'Problem 2 solution: {problem_02()}')
+    print(f'Problem 2 solution: {problem_002()}')
