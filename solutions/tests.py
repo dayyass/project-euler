@@ -7,6 +7,7 @@ from problem_005 import problem_005
 from problem_006 import problem_006
 from problem_007 import problem_007
 from problem_008 import problem_008
+from problem_009 import problem_009
 
 
 class TestProblem001(unittest.TestCase):
@@ -81,6 +82,12 @@ class TestProblem008(unittest.TestCase):
 
     def test_answer(self):
         self.assertEqual(problem_008(), 23514624000)
+
+
+class TestProblem009(unittest.TestCase):
+
+    def test_answer(self):
+        self.assertEqual(problem_009(), 31875000)
 
 
 if __name__ == '__main__':

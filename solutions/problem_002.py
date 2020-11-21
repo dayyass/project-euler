@@ -1,9 +1,9 @@
 def problem_002(upper_bound: int = 4_000_000) -> int:
     """
+    Compute fib numbers in a loop, adding even-values terms to result.
+
     - O(n) time-complexity
     - O(1) space-complexity
-
-    Compute fib numbers in a loop, adding even-values terms to result.
     """
     result = 0  # cumulative sum
     fib_1 = 0  # prev fib number

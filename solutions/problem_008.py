@@ -27,7 +27,8 @@ n = (
 
 def problem_008(series: int = 13, n: str = n) -> int:
     """
-    Straightforward solution using slicing window and product function
+    Straightforward solution using slicing window and product function.
+
     - O(n * series) time-complexity
     - O(1) space-complexity
     """

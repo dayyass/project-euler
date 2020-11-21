@@ -3,9 +3,9 @@ from utils import is_prime
 
 def problem_007(n_prime: int = 10001) -> int:
     """
-    - O(1) space-complexity
-
     Iterate over number, check if number is prime until reach desired prime number.
+
+    - O(1) space-complexity
     """
     cnt = 0  # prime numbers counter
     num = 0  # current number

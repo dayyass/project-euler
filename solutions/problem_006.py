@@ -1,9 +1,9 @@
 def problem_006(n: int = 100) -> int:
     """
+    Compute the loop using one loop, instead of straightforward solution with two loops.
+
     - O(n) time-complexity
     - O(1) space-complexity
-
-    Compute the loop using one loop, instead of straightforward solution with two loops.
     """
     sum_of_squares = 0
     square_of_sum = 0
