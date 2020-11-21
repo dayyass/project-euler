@@ -39,17 +39,39 @@ def is_palindromic(n: int) -> bool:
     return False
 
 
-def find_all_divisors(n: int) -> Set[int]:
-    all_divisors = {1, n}
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            all_divisors.add(i)
-            all_divisors.add(n // i)
-    return all_divisors
+# def find_divisors(n: int) -> Set[int]:
+#     """
+#     Find all divisors of a number.
+#     - O(sqrt(n)) time-complexity
+#     - O(n) space-complexity
+#     """
+#     divisors = {1, n}
+#     for i in range(2, int(n ** 0.5) + 1):
+#         if n % i == 0:
+#             divisors.add(i)
+#             divisors.add(n // i)
+#     return divisors
 
 
-def product(iterable: Iterable):
+def check_divisible(n: int, array: Iterable) -> bool:
+    """
+    Check if a number is divisible by all numbers in array.
+    - O(n) time-complexity
+    - O(1) space-complexity
+    """
+    for i in array:
+        if n % i != 0:
+            return False
+    return True
+
+
+def product(array: Iterable):
+    """
+    Multiply all elements in array.
+    - O(n) time-complexity
+    - O(1) space-complexity
+    """
     product = 1
-    for i in iterable:
+    for i in array:
         product *= i
     return product
