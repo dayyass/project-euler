@@ -42,28 +42,28 @@ def is_palindromic(n: int) -> bool:
     return False
 
 
-# def find_divisors(n: int) -> Set[int]:
-#     """
-#     Find all divisors of a number.
-#     - O(sqrt(n)) time-complexity
-#     - O(n) space-complexity
-#     """
-#     divisors = {1, n}
-#     for i in range(2, int(n ** 0.5) + 1):
-#         if n % i == 0:
-#             divisors.add(i)
-#             divisors.add(n // i)
-#     return divisors
+def find_divisors(n: int) -> Set[int]:
+    """
+    Find all divisors of a number.
+    - O(sqrt(n)) time-complexity
+    - O(n) space-complexity
+    """
+    divisors = {1, n}
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            divisors.add(i)
+            divisors.add(n // i)
+    return divisors
 
 
-def check_divisible(n: int, array: Iterable) -> bool:
+def check_divisible(n: int, divisors: Iterable) -> bool:
     """
     Check if a number is divisible by all numbers in array.
 
     - O(n) time-complexity
     - O(1) space-complexity
     """
-    for i in array:
+    for i in divisors:
         if n % i != 0:
             return False
     return True
