@@ -1,4 +1,4 @@
-from typing import Set
+from typing import Set, Iterable
 
 
 def arithmetic_series_multiple_of_d_up_to_upper_bound(d: int, upper_bound) -> int:
@@ -46,3 +46,10 @@ def find_all_divisors(n: int) -> Set[int]:
             all_divisors.add(i)
             all_divisors.add(n // i)
     return all_divisors
+
+
+def product(iterable: Iterable):
+    product = 1
+    for i in iterable:
+        product *= i
+    return product
