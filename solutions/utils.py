@@ -1,18 +1,6 @@
 from typing import Set, Iterable
 
 
-def arithmetic_series_multiple_of_d_up_to_upper_bound(d: int, upper_bound) -> int:
-    """
-    Sum of natural numbers up to upper_bound multiples of d.
-
-    - O(1) time-complexity
-    - O(1) space-complexity
-    """
-    n = (upper_bound - 1) // d
-    S = d * n * (n + 1) // 2
-    return S
-
-
 def is_prime(n: int) -> bool:
     """
     Check if the number is prime using Trial division algorithm.
@@ -80,3 +68,19 @@ def product(array: Iterable):
     for i in array:
         product *= i
     return product
+
+
+def collatz_sequence_len(n: int) -> int:
+    """
+    Compute len of Collatz sequence.
+
+    - O(1) space-complexity
+    """
+    result = 1
+    while n != 1:
+        if n % 2 == 0:
+            n //= 2
+        else:
+            n = 3 * n + 1
+        result += 1
+    return result

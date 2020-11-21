@@ -1,4 +1,13 @@
-from utils import arithmetic_series_multiple_of_d_up_to_upper_bound
+def arithmetic_series_multiple_of_d_up_to_upper_bound(d: int, upper_bound) -> int:
+    """
+    Sum of natural numbers up to upper_bound multiples of d.
+
+    - O(1) time-complexity
+    - O(1) space-complexity
+    """
+    n = (upper_bound - 1) // d
+    S = d * n * (n + 1) // 2
+    return S
 
 
 def problem_001(upper_bound: int = 1000) -> int:
