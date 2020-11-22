@@ -13,4 +13,4 @@ def problem_015(n: int = 20) -> int:
 
 
 if __name__ == '__main__':
-    print(f'Problem 2 solution: {problem_015()}')
+    print(f'Problem 15 solution: {problem_015()}')
