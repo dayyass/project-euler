@@ -84,3 +84,30 @@ def collatz_sequence_len(n: int) -> int:
             n = 3 * n + 1
         result += 1
     return result
+
+
+def is_leap_year(year: int) -> bool:
+    """
+    Check if year is leap.
+
+    - O(1) time-complexity
+    - O(1) space-complexity
+    """
+    return (year % 4 == 0) and ((year % 100 != 0) or (year % 400 == 0))
+
+
+def factorial(n: int) -> int:
+    """
+    Calculates the factorial of a number
+    """
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
+
+
+def sum_of_digits_in_number(n: int) -> int:
+    """
+    Calculate the sum of the digits in the number.
+    """
+    return sum(int(digit) for digit in str(n))
