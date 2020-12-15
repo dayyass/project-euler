@@ -9,9 +9,8 @@ def problem_003(n: int = 600851475143) -> int:
     - O(1) space-complexity
     """
     for i in range(int(n ** 0.5), 0, -1):
-        if n % i == 0:
-            if is_prime(i):
-                return i
+        if (n % i == 0) and (is_prime(i)):
+            return i
     return 0  # return 0 otherwise
 
 
