@@ -1,4 +1,4 @@
-from utils import find_divisors
+from utils import find_proper_divisors
 
 
 def check_amicable_number(n: int) -> bool:
@@ -8,10 +8,10 @@ def check_amicable_number(n: int) -> bool:
     - O(sqrt(n)) time-complexity
     - O(n) space-complexity
     """
-    d_n = sum(find_divisors(n) - {n})
+    d_n = sum(find_proper_divisors(n) - {n})
     if n == d_n:
         return False
-    d_dn = sum(find_divisors(d_n) - {d_n})
+    d_dn = sum(find_proper_divisors(d_n) - {d_n})
     if n == d_dn:
         return True
     return False

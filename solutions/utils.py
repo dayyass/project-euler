@@ -44,6 +44,17 @@ def find_divisors(n: int) -> Set[int]:
     return divisors
 
 
+def find_proper_divisors(n: int) -> Set[int]:
+    """
+    Find all proper divisors of a number.
+    - O(sqrt(n)) time-complexity
+    - O(n) space-complexity
+    """
+
+    divisors = find_divisors(n)
+    return divisors - {n}  # without n
+
+
 def check_divisible(n: int, divisors: Iterable) -> bool:
     """
     Check if a number is divisible by all numbers in array.
