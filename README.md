@@ -29,3 +29,4 @@ Inspired by the article ["Consider Yourself a Developer? You Should Solve the Pr
 |21|[Amicable numbers](https://projecteuler.net/problem=21)|[Python](./solutions/problem_021.py)|5%|
 |22|[Names scores](https://projecteuler.net/problem=22)|[Python](./solutions/problem_022.py)|5%|
 |23|[Non-abundant sums](https://projecteuler.net/problem=23)|[Python](./solutions/problem_023.py)|5%|
+|25|[1000-digit Fibonacci number](https://projecteuler.net/problem=25)|[Python](./solutions/problem_025.py)|5%|

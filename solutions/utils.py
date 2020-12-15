@@ -130,11 +130,11 @@ def fibonacci_generator():
     """
     fib_prev = 0  # prev fib number
     fib_cur = 1  # next fib number
-    i = 0  # number position
+    i = 1  # number position
     while True:
+        yield i, fib_cur
         i += 1
         fib_prev, fib_cur = fib_cur, fib_prev + fib_cur
-        yield i, fib_cur
 
 
 def prime_generator():
