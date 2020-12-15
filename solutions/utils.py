@@ -30,6 +30,46 @@ def is_palindromic(n: int) -> bool:
     return False
 
 
+def is_leap_year(year: int) -> bool:
+    """
+    Check if year is leap.
+
+    - O(1) time-complexity
+    - O(1) space-complexity
+    """
+    return (year % 4 == 0) and ((year % 100 != 0) or (year % 400 == 0))
+
+
+def sum_of_digits_in_number(n: int) -> int:
+    """
+    Calculate the sum of the digits in the number.
+    """
+    return sum(int(digit) for digit in str(n))
+
+
+def product(array: Iterable):
+    """
+    Multiply all elements in array.
+
+    - O(n) time-complexity
+    - O(1) space-complexity
+    """
+    product = 1
+    for i in array:
+        product *= i
+    return product
+
+
+def factorial(n: int) -> int:
+    """
+    Calculates the factorial of a number
+    """
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
+
+
 def find_divisors(n: int) -> Set[int]:
     """
     Find all divisors of a number.
@@ -68,19 +108,6 @@ def check_divisible(n: int, divisors: Iterable) -> bool:
     return True
 
 
-def product(array: Iterable):
-    """
-    Multiply all elements in array.
-
-    - O(n) time-complexity
-    - O(1) space-complexity
-    """
-    product = 1
-    for i in array:
-        product *= i
-    return product
-
-
 def collatz_sequence_len(n: int) -> int:
     """
     Compute len of Collatz sequence.
@@ -97,28 +124,27 @@ def collatz_sequence_len(n: int) -> int:
     return result
 
 
-def is_leap_year(year: int) -> bool:
+def fibonacci_generator():
     """
-    Check if year is leap.
-
-    - O(1) time-complexity
-    - O(1) space-complexity
+    Fibonacci numbers generator that yields position of the number and number itself.
     """
-    return (year % 4 == 0) and ((year % 100 != 0) or (year % 400 == 0))
-
-
-def factorial(n: int) -> int:
-    """
-    Calculates the factorial of a number
-    """
-    result = 1
-    for i in range(1, n+1):
-        result *= i
-    return result
+    fib_prev = 0  # prev fib number
+    fib_cur = 1  # next fib number
+    i = 0  # number position
+    while True:
+        i += 1
+        fib_prev, fib_cur = fib_cur, fib_prev + fib_cur
+        yield i, fib_cur
 
 
-def sum_of_digits_in_number(n: int) -> int:
+def prime_generator():
     """
-    Calculate the sum of the digits in the number.
+    Prime numbers generator that yields position of the number and number itself.
     """
-    return sum(int(digit) for digit in str(n))
+    i = 0  # prime numbers counter
+    num = 0  # current number
+    while True:
+        num += 1
+        if is_prime(num):
+            i += 1
+            yield i, num

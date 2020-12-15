@@ -1,17 +1,18 @@
-from utils import is_prime
+from utils import prime_generator
 
 
 def problem_010(upper_bound: int = 2_000_000) -> int:
     """
-    Straightforward solution using loop and is_prime() function.
+    Straightforward solution using prime_generator.
 
     - O(n^(3/2)) time-complexity
     - O(1) space-complexity
     """
     result = 0
-    for i in range(upper_bound):
-        if is_prime(i):
-            result += i
+    for i, num in prime_generator():
+        if num >= upper_bound:
+            break
+        result += num
     return result
 
 
