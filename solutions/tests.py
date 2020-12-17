@@ -21,6 +21,7 @@ from problem_021 import problem_021
 from problem_022 import problem_022
 from problem_023 import problem_023
 from problem_025 import problem_025
+from problem_027 import problem_027
 
 
 class TestProblem001(unittest.TestCase):
@@ -206,6 +207,12 @@ class TestProblem025(unittest.TestCase):
 
     def test_answer(self):
         self.assertEqual(problem_025(), 4782)
+
+
+class TestProblem027(unittest.TestCase):
+
+    def test_answer(self):
+        self.assertEqual(problem_027(), -59231)
 
 
 if __name__ == '__main__':
