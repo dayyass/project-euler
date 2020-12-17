@@ -47,6 +47,13 @@ def sum_of_digits_in_number(n: int) -> int:
     return sum(int(digit) for digit in str(n))
 
 
+def sum_of_digit_powers_in_number(n: int, power: int) -> int:
+    """
+    Calculate the sum of the digits in the number.
+    """
+    return sum(int(digit) ** power for digit in str(n))
+
+
 def product(array: Iterable):
     """
     Multiply all elements in array.
