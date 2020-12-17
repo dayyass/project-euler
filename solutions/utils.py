@@ -30,6 +30,20 @@ def is_palindromic(n: int) -> bool:
     return False
 
 
+def is_pandigital(n: int) -> bool:
+    """
+    Check if the number is pandigital.
+
+    - O(n) time-complexity
+    - O(1) space-complexity
+    """
+    str_n = str(n)
+    for i in range(1, len(str_n) + 1):
+        if str(i) not in str_n:
+            return False
+    return True
+
+
 def is_leap_year(year: int) -> bool:
     """
     Check if year is leap.

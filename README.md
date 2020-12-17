@@ -33,3 +33,4 @@ Inspired by the article ["Consider Yourself a Developer? You Should Solve the Pr
 |27|[Quadratic primes](https://projecteuler.net/problem=27)|[Python](./solutions/problem_027.py)|5%|
 |29|[Distinct powers](https://projecteuler.net/problem=29)|[Python](./solutions/problem_029.py)|5%|
 |30|[Digit fifth powers](https://projecteuler.net/problem=30)|[Python](./solutions/problem_030.py)|5%|
+|32|[Pandigital products](https://projecteuler.net/problem=32)|[Python](./solutions/problem_032.py)|5%|
