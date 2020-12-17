@@ -17,6 +17,9 @@ def quadratic_n_primes(a: int, b:int) -> int:
 def problem_027(a_min: int = -999, a_max: int = 999, b_min: int = -1000, b_max: int = 1000) -> int:
     """
     Straightforward solution. Iterate over all a and b params to find max number of quadratic primes.
+
+    - O(n^2) time-complexity
+    - O(1) space-complexity
     """
     n_primes_res, a_res, b_res = 0, 0, 0
     for a in range(a_min, a_max + 1):

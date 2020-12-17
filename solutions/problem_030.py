@@ -1,7 +1,7 @@
 from utils import sum_of_digit_powers_in_number
 
 
-def find_upper_bound(power):
+def find_upper_bound(power: int) -> int:
     """
     Helper function to find upper search bound.
     """
@@ -14,6 +14,9 @@ def find_upper_bound(power):
 def problem_030(power: int = 5) -> int:
     """
     Sum all suitable numbers up to upper bound.
+
+    - O(2^n) time-complexity
+    - O(1) space-complexity
     """
     result = 0
     upper_bound = find_upper_bound(power)

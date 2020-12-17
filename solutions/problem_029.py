@@ -1,6 +1,9 @@
 def problem_029(a_min: int = 2, a_max: int = 100, b_min: int = 2, b_max: int = 100) -> int:
     """
     Straightforward solution.
+
+    - O(n^2) time-complexity
+    - O(n) space-complexity
     """
     unique_powers = set()
     for a in range(a_min, a_max + 1):
