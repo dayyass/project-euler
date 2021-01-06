@@ -169,3 +169,26 @@ def prime_generator():
         if is_prime(num):
             i += 1
             yield i, num
+
+
+def gcd(a, b):
+    """
+    Euclidean algorithm for Greatest Common Divisor.
+
+    - O(1) space-complexity
+    """
+    while a != b:
+        if a > b:
+            a -= b
+        else:
+            b -= a
+    return a
+
+
+def lcm(a, b):
+    """
+    Least Common Multiple.
+
+    - O(1) space-complexity
+    """
+    return a * b // gcd(a, b)
