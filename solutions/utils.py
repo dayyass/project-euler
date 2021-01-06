@@ -171,7 +171,7 @@ def prime_generator():
             yield i, num
 
 
-def gcd(a, b):
+def gcd(a: int, b: int) -> int:
     """
     Euclidean algorithm for Greatest Common Divisor.
 
@@ -185,7 +185,7 @@ def gcd(a, b):
     return a
 
 
-def lcm(a, b):
+def lcm(a: int, b: int) -> int:
     """
     Least Common Multiple.
 
