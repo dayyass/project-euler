@@ -4,9 +4,11 @@
 Please close this page immediately if you wish to solve the problems yourself!**
 
 ### About
-My solutions to [Project Euler](https://projecteuler.net) problems.
-
+My solutions to [Project Euler](https://projecteuler.net) problems.<br/>
 Inspired by the article ["Consider Yourself a Developer? You Should Solve the Project Euler Problems"](https://blog.usejournal.com/consider-yourself-a-developer-you-should-solve-the-project-euler-problems-ed8d13397c9c).
+
+### What is Project Euler?
+[Project Euler](https://projecteuler.net) is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
 
 ### Solved Problems
 | # | Title | Solution | Difficulty |
