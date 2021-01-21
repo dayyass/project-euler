@@ -1,7 +1,7 @@
 ### Project Euler
 
-**Warning - This repository contains solutions with right answers.<br/>
-Please close this page immediately if you wish to solve the problems yourself.**
+**Warning - This repository contains problem solutions with right answers!<br/>
+Please close this page immediately if you wish to solve the problems yourself!**
 
 ### About
 My solutions to [Project Euler](https://projecteuler.net) problems.
